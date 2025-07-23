@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ezio" 
+version = "0.1.0" 
+authors = [
+  { name="clarkmaio", email="maioliandrea0@gmail.com" },
+]
+description = "A simple, opinionated wrapper for Altair visualizations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file="LICENSE" } # Assuming you have a LICENSE file
+keywords = ["altair", "data-visualization", "plotting", "wrapper"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Framework :: Altair",
+]
+dependencies = [
+    "altair>=5.0",
+    "polars",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/clarkmaio/ezio"
+"Documentation" = "https://github.com/clarkmaio/ezio"

@@ -1,0 +1,10 @@
+
+
+.vscode
+*.pyc
+.env
+
+__pycache__/
+__marimo__
+*.pyo
+*.pyd

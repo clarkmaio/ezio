@@ -1,0 +1,11 @@
+
+
+altair
+polars
+numpy
+marimo
+dotenv-python
+
+setuptools 
+wheel 
+twine
