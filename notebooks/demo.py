@@ -15,8 +15,7 @@ def _():
     import marimo as mo
     sys.path.append(os.getcwd())
     from ezio.base.line import LineChart
-    from ezio.base.timeseries import TimeseriesChart
-    return LineChart, TimeseriesChart, date, np, pl
+    return LineChart, date, np, pl
 
 
 @app.cell
@@ -42,30 +41,17 @@ def _(date, np, pl):
 
 @app.cell
 def _(LineChart, data):
-    LineChart(
-        data=data,
-        x='x',
-        y=['var1', 'var2'],
-        ytitle='title y axis',
-        colors=['green', 'red', 'black'],
-        hoverdata=['var1'],
-        title='My title',
-    ).render(width=500, height=200)
-    return
-
-
-@app.cell
-def _(TimeseriesChart, data):
-    TimeseriesChart(
-        data=data, 
-        x='time', 
-        y=['var1', 'var2'],
-        yview=['var3'],
-        title='This is a title',
-        colors=['blue', 'black', 'orange'],
-        ytitle='y value',
-        ytitlebar='bar label'
-    ).render(width=700, height=300)
+    (
+        LineChart(data=data, 
+                        x='time', 
+                        y=['var1', 'var2'],
+                       colors=['lightblue', 'black'])
+        .add_view(y=['var1'])
+        #.add_vrule(color='black')
+        .add_scatter(x='var1', y='var2', color='limegreen', highlight_color='red')
+        .add_title('This is a title')
+        .render(height=300, width=500)
+    )
     return
 
 

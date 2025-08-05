@@ -31,5 +31,28 @@ class BaseChart:
 
     def render(self, width: int = 500, height: int = 300) -> alt.Chart:
         self._chart =  self.assemble(components=self._components, height=height, width=width)
+        
+        if 'title' in self._components:
+            self._chart = self._chart.properties(title=alt.Title(text=self._components['title']['text'], 
+                                                                 anchor='middle', 
+                                                                 fontSize=15, 
+                                                                 fontWeight='bold'))
+
         return self._chart
     
+
+
+    def add_title(self, title: str):
+        """
+        Adds a title to the chart.
+        
+        Args:
+            title (str): The title of the chart.
+        """
+        self._components['title'] = {
+            'text': title,
+            'anchor': 'middle',
+            'fontSize': 15,
+            'fontWeight': 'bold'
+        }
+        return self
