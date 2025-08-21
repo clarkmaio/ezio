@@ -1,5 +1,3 @@
-<img width="3760" height="1920" alt="image" src="https://github.com/user-attachments/assets/946281be-40c0-4420-8174-df196606732b" />
-
 # ezio (just an altair wrapper)
 
 > I will dedicate my life to make people stop using plotly.
