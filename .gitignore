@@ -8,3 +8,11 @@ __pycache__/
 __marimo__
 *.pyo
 *.pyd
+*.whl
+*.egg
+*.gz
+
+
+dist/
+ezio.egg-info/
+build/
