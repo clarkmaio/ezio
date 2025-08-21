@@ -2,7 +2,10 @@
 
 # Ezio (an altair wrapper)
 
-> I've decided to dedicate my life to make people stop using plotly.
+
+> I will dedicate my life to make people stop using plotly.
+>
+> -- <cite>Benjamin Franklin</cite>
 
 
 The idea behind this package is quite simple: create a wrapper of [altair](https://altair-viz.github.io/) similar to what [plotly-express](https://plotly.com/python/plotly-express/) did for plotly.
@@ -23,7 +26,10 @@ Here a tiny demo:
 ```
 import polars as pl
 import ezioaltair as ez
+import numpy as np
+from datetime import date
 
+N = 100
 data = pl.DataFrame({
     'time': pl.date_range(start=date(2025, 1, 1), 
                           end=date(2025, 1, 1) + pl.duration(days=N-1), 
