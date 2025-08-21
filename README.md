@@ -1,6 +1,6 @@
 
 
-# Ezio (an altair wrapper)
+# ezio (just an altair wrapper)
 
 > I will dedicate my life to make people stop using plotly.
 >
@@ -25,7 +25,10 @@ Here a tiny demo:
 ```
 import polars as pl
 import ezioaltair as ez
+import numpy as np
+from datetime import date
 
+N = 100
 data = pl.DataFrame({
     'time': pl.date_range(start=date(2025, 1, 1), 
                           end=date(2025, 1, 1) + pl.duration(days=N-1), 
