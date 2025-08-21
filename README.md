@@ -1,4 +1,4 @@
-
+<img width="3760" height="1920" alt="image" src="https://github.com/user-attachments/assets/946281be-40c0-4420-8174-df196606732b" />
 
 # ezio (just an altair wrapper)
 
@@ -16,36 +16,4 @@ The motto of this packae is modularity. No fuctions with 1 billion parameters (I
 
 
 ## Demo
-
-In this marimo you will find few examples.
-
-Here a tiny demo:
-
-
-```
-import polars as pl
-import ezioaltair as ez
-import numpy as np
-from datetime import date
-
-N = 100
-data = pl.DataFrame({
-    'time': pl.date_range(start=date(2025, 1, 1), 
-                          end=date(2025, 1, 1) + pl.duration(days=N-1), 
-                          interval='1d',
-                         eager=True),
-    'var1': (np.random.randn(N) + np.linspace(0, 10, N)).tolist(),
-    'var2': (np.random.randn(N)*0.2 + np.sin(np.linspace(0, 10, N))).tolist(),
-})
-
-(
-    ez.LineChart(data=data, 
-                    x='time', 
-                    y=['var1', 'var2'],
-                   colors=['red', 'black'], ytitle='y axis title', xtitle='x axis')
-    .add_view(y=['var1'])
-    .add_scatter(x='var1', y='var2', highlight_color='green', color='blue')
-    .add_title('This is a title')
-    .render(height=300, width=500)
-)
-```
+[Here](https://molab.marimo.io/notebooks/nb_y8KbLT399LDWdwJcpssA18) you can find a tiny demo in marimo notebook
