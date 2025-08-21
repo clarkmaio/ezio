@@ -2,7 +2,9 @@
 
 # Ezio (an altair wrapper)
 
-> I've decided to dedicate my life to make people stop using plotly.
+> I will dedicate my life to make people stop using plotly.
+>
+> -- <cite>Benjamin Franklin</cite>
 
 
 The idea behind this package is quite simple: create a wrapper of [altair](https://altair-viz.github.io/) similar to what [plotly-express](https://plotly.com/python/plotly-express/) did for plotly.

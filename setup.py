@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ezioaltair",
-    version="0.1.0",
+    version="0.1.1",
     author="clarkmaio",
     author_email="maioliandrea0@gmail.com",
     description="A simple, opinionated wrapper for Altair visualizations.",
