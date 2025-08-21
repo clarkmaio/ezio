@@ -15,4 +15,5 @@ __marimo__
 
 dist/
 ezio.egg-info/
+ezioaltair.egg-info/
 build/

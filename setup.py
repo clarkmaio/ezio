@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="ezio",
+    name="ezioaltair",
     version="0.1.0",
     author="clarkmaio",
     author_email="maioliandrea0@gmail.com",
@@ -20,7 +20,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Scientific/Engineering :: Visualization",
-        "Framework :: Altair", # Custom classifier, useful for discovery
     ],
     python_requires='>=3.10', # Altair often requires newer Python versions
     install_requires=[
