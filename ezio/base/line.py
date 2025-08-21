@@ -251,6 +251,8 @@ class LineChart(BaseChart):
 
 
 
+
+
         return self._chart
 
 

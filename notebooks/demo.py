@@ -40,15 +40,21 @@ def _(date, np, pl):
 
 
 @app.cell
+def _(data):
+    data.head()
+    return
+
+
+@app.cell
 def _(LineChart, data):
     (
         LineChart(data=data, 
                         x='time', 
                         y=['var1', 'var2'],
-                       colors=['lightblue', 'black'])
-        .add_view(y=['var1'])
-        #.add_vrule(color='black')
-        .add_scatter(x='var1', y='var2', color='limegreen', highlight_color='red')
+                       colors=['red', 'black'])
+        .add_view(y=['var1', 'var2'])
+        .add_vrule(color='black')
+        .add_scatter(x='var1', y='var2')
         .add_title('This is a title')
         .render(height=300, width=500)
     )

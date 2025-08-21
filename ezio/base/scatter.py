@@ -14,7 +14,7 @@ class ScatterChart(BaseChart):
     def _build_components(self):
         pass
 
-    def assemble(self, ccomponents: Dict, height: int = 300, width: int = 1000):
+    def assemble(self, components: Dict, height: int = 300, width: int = 1000):
         pass
 
 
