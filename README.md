@@ -1,6 +1,6 @@
 
 
-# ezio (an altair wrapper)
+# ezio (just an altair wrapper)
 
 
 > I will dedicate my life to make people stop using plotly.
